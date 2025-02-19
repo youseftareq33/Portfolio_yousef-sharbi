@@ -489,6 +489,15 @@ nav {
     --box-shadow-color: rgba(0, 172, 193, 0.48);
 }
 
+.section .skills .skills_sector .p_sector .postman{
+    --bg-color: #f86c34;
+    --bg-color-before: #ffdbcb;
+    --bg-color-light: #ffa371;
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(248, 108, 52, 0.48);
+}
+
+
 
 .section .skills .skills_sector .p_sector .card {
     width: 220px;
