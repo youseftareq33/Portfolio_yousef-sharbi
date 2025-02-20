@@ -62,6 +62,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Set initial active link on page load
     scrollActive();
+
+
+    document.querySelectorAll(".proj1").forEach(card => {
+        card.addEventListener("click", function() {
+            window.open('https://github.com/youseftareq33/SmartLib', '_blank');
+        });
+    });
+
+    document.querySelectorAll(".proj2").forEach(card => {
+        card.addEventListener("click", function() {
+            window.open('https://github.com/youseftareq33/Web_1_Palestinian-Souvenirs-Online', '_blank');
+        });
+    });
+
+    document.querySelectorAll(".proj3").forEach(card => {
+        card.addEventListener("click", function() {
+            window.open('https://github.com/youseftareq33/Flutter_Athkar-App', '_blank');
+        });
+    });
+
+    document.querySelectorAll(".proj4").forEach(card => {
+        card.addEventListener("click", function() {
+            window.open('https://github.com/youseftareq33/AndroidStudio_Birzeit_University_Student_App', '_blank');
+        });
+    });
+
+    document.querySelectorAll(".proj5").forEach(card => {
+        card.addEventListener("click", function() {
+            window.open('https://github.com/youseftareq33/Java_DataBase_1_SportShop', '_blank');
+        });
+    });
 });
 
 
