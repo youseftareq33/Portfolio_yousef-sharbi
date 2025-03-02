@@ -111,3 +111,24 @@ const sr = ScrollReveal({
 sr.reveal('.home, .about, .p_sector, .projects',{}); 
 sr.reveal('.about_sector, .projects_sector',{delay: 400}); 
 sr.reveal('.about_emoji, .skills_emoji, .p_container, projects_emoji ,.projects_container, contacts_emoji',{ interval: 200}); 
+
+sr.reveal('.github-counter, .leetcode-counter', {
+    afterReveal: function () {
+        animateCounter("github-counter", 50, 50);
+        animateCounter("leetcode-counter", 80, 30);
+    }
+});
+
+function animateCounter(id, targetNumber, speed) {
+    let counter = 0;
+    let step = Math.ceil(targetNumber / 30); // Increase by a bigger step for speed
+
+    let interval = setInterval(() => {
+        counter += step;
+        if (counter >= targetNumber) {
+            counter = targetNumber; // Ensure it stops exactly at target
+            clearInterval(interval);
+        }
+        document.getElementById(id).textContent = counter;
+    }, speed / 2); // Reduce interval time for faster animation
+}
