@@ -425,6 +425,14 @@ nav {
     --box-shadow-color: rgba(68, 209, 254, 0.48);
 }
 
+.section .skills .skills_sector .p_sector .SpringBoot {
+    --bg-color: #70b43c;
+    --bg-color-before: #ebebeb;
+    --bg-color-light: #e4e8e2;
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(112, 180, 60, 0.48);
+}
+
 .section .skills .skills_sector .p_sector .mysql {
     --bg-color: #0a93b7;
     --bg-color-before: #c9f4ff;
